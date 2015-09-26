@@ -1,46 +1,84 @@
 size(400,400);
+background(#FFFFBB);
 
-ellipseMode(CENTER);
-fill(#0044BB);
+//face
+strokeWeight(8);  // Thicker
+stroke(#000000); //black
+fill(#33CCFF); //blue
 ellipse(200,200,300,300);
 
-//half fece
-fill(#FFFFFF);
-ellipse(200,230,260,240);
+//inside face up
+strokeWeight(4);  // Thicker
+stroke(#000000); //white
+fill(#FFFFFF); //white
+arc(200,200,293,165,PI,2*PI);
 
-//eye
-ellipse(170,120,60,70);
-ellipse(230,120,60,70);
+//inside face down
+strokeWeight(4);  // Thicker
+fill(#FFFFFF); //white
+arc(200,200,293,297,0,PI);
 
-//left eyeball
-fill(#000000);
-ellipse(180,120,30,30);
-fill(#FFFFFF);
-ellipse(180,120,10,10);
+//left eye
+stroke(#000000); //black
+fill(#FFFFFF); //white
+ellipse(170,120,70,80);
 
-//right eyeball
-fill(#000000);
-ellipse(220,120,30,30);
-fill(#FFFFFF);
-ellipse(220,120,10,10);
+fill(#000000); //black
+ellipse(190,130,15,20);
+
+fill(#FFFFFF); //white
+ellipse(190,130,8,10);
+
+//right eye
+stroke(#000000); //black
+fill(#FFFFFF); //white
+ellipse(240,120,70,80);
+
+fill(#000000); //black
+ellipse(220,130,15,20);
+
+fill(#FFFFFF); //white
+ellipse(220,130,8,10);
 
 //nose
-fill(#FF5511);
-ellipse(200,160,30,30);
+stroke(#000000); //black
+fill(#FF0000); //red
+ellipse(205,165,40,40);
 
-//Philtrum
-line(200,175,200,280);
+//nose dot
+noStroke();
+fill(#FFFFFF); //white
+ellipse(205,160,15,15);
 
 //left bear
-line(80,150,150,180);
-line(80,180,150,190);
-line(80,210,150,200);
+stroke(#000000); //black
+line(60,160,150,190);
+
+stroke(#000000); //black
+line(60,200,150,200);
+
+stroke(#000000); //black
+line(60,240,150,210);
 
 //right bear
-line(250,180,310,160);
-line(250,190,310,190);
-line(250,200,310,220);
+stroke(#000000); //black
+line(340,160,250,190);
 
-//mouth
+stroke(#000000); //black
+line(340,200,250,200);
+
+stroke(#000000); //black
+line(340,240,250,210);
+
+//mouthe line
+stroke(#000000); //black
+line(205,185,205,300);
+
+//smile
 noFill();
-arc(200,240,160,100,0,PI);
+arc(200,210,240,180,0,PI);
+
+
+
+
+
